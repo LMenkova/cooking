@@ -37,6 +37,6 @@ concept_family_cyprinidae<-sc_node_not_relation;
 concept_family_cyprinidae <= nrel_subdividing: ...
 (*  		
 		<-concept_bream;;
-		<-concept_european_carp;;
+		<-concept_carp;;
 		<-concept_carassius;;	
 *);;

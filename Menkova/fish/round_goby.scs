@@ -44,9 +44,9 @@ concept_round_goby<-sc_node_not_relation;
       *);;
   *);;
 
- concept_bream -> rrel_example: [Бычок - кругляк нерестится с апреля по сентябрь.](* <- lang_ru;; *);;
+ concept_round_goby -> rrel_example: [Бычок - кругляк нерестится с апреля по сентябрь.](* <- lang_ru;; *);;
 
-concept_bream <= nrel_subdividing: ...
+concept_round_goby <= nrel_subdividing: ...
 (*  		
 		<-concept_baked_round_goby;;
 		<-concept_boiled_round_goby;;

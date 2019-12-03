@@ -45,9 +45,9 @@ concept_european_ruffe<-sc_node_not_relation;
       *);;
   *);;
 
- concept_bream -> rrel_example: [Ерш очень неприхотливый, обычно стайный вид, и он очень хорошо чувствует себя в в широком спектре условий окружающей среды.](* <- lang_ru;; *);;
+ concept_european_ruffe -> rrel_example: [Ерш очень неприхотливый, обычно стайный вид, и он очень хорошо чувствует себя в в широком спектре условий окружающей среды.](* <- lang_ru;; *);;
 
-concept_bream <= nrel_subdividing: ...
+concept_european_ruffe <= nrel_subdividing: ...
 (*  		
 		<-concept_baked_european_ruffe;;
 		<-concept_boiled_european_ruffe;;

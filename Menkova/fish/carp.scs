@@ -50,7 +50,7 @@ concept_carp<-sc_node_not_relation;
 
  concept_carp -> rrel_example: [  Европейский сазан является самым часто встречаемым сазаном. ](* <- lang_ru;; *);;
 
-concept_bream <= nrel_subdividing: ...
+concept_carp <= nrel_subdividing: ...
 (*  		
 		<-concept_baked_carp;;
 		<-concept_boiled_carp;;

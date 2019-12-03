@@ -47,9 +47,9 @@ concept_carassius<-sc_node_not_relation;
       *);;
   *);;
 
- concept_carp -> rrel_example: [ Серебряный карась является самым часто встречаемым карасем. ](* <- lang_ru;; *);;
+ concept_carassius -> rrel_example: [ Серебряный карась является самым часто встречаемым карасем. ](* <- lang_ru;; *);;
 
-concept_bream <= nrel_subdividing: ...
+concept_carassius <= nrel_subdividing: ...
 (*  		
 		<-concept_baked_carassius;;
 		<-concept_boiled_carassius;;
