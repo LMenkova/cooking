@@ -1,0 +1,49 @@
+concept_salmon <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Семга ]
+      (*<-lang_ru;;*);
+      [ Salmon ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семга)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_salmonidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Семга - это представитель семейства лососевые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семга, нерест, место, основной источник, пища, килька, сельдь, колюшка )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	  concept_spawning;
+    concept_place;
+    concept_main_source;
+    concept_food;    
+    concept_sprat;
+    concept_herring;
+    concept_stickleback
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Нерестится семга в местах, где основным источником пищи может служить килька, сельдь и колюшка. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_salmon -> rrel_example: [ Семга занимает обширный ареал.](* <- lang_ru;; *);;
+
+concept_salmon <= nrel_subdividing: ...
+(*  		
+        <-concept_baked_salmon;;
+		    <-concept_boiled_salmon;;
+	    	<-concept_smoked_salmon;;
+        <-concept_fried_salmon;; 	
+*);;
+
+

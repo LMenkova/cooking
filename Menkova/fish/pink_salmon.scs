@@ -1,0 +1,20 @@
+concept_pink_salmon <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Горбуша ]
+      (*<-lang_ru;;*);
+      [ Pink salmon ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Горбуша )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_representative;
+	 concept_family_salmonidae
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Горбуша - это представитель семейства лососевые .] (* <- lang_ru;; *);;
+    *);;
+   *);;
+
