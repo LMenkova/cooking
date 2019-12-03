@@ -1,0 +1,29 @@
+concept_boiling_water=>nrel_idtf:[boiling_water] (* <- lang_en;; *);;
+concept_boiling_water=>nrel_main_idtf:[кипяток] (* <- lang_ru;; *);;
+
+concept_boiling_water<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(кипяток)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Вода полученная при кипячении](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_drink;concept_pouring;;
+	*);;
+
+*);;
+
+concept_boiling_water<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://photo//boiling_water.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;

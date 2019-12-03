@@ -1,0 +1,74 @@
+instant_noodles_e1
+=> nrel_main_idtf:[Смесь для заливки]
+(* <- lang_ru;; *);;
+
+instant_noodles_e2
+=> nrel_main_idtf:[Готовая лапша]
+(* <- lang_ru;; *);;
+
+
+concept_instant_noodles_recept
+ => nrel_main_idtf:[Лапша быстрого приготовления.Рецепт](* <- lang_ru;; *);;
+
+
+concept_instant_noodles_recept_stages =>nrel_main_idtf:
+	[Лапша быстрого приготовления.Рецепт.Этапы](* <- lang_ru;; *);;
+concept_instant_noodles_recept_stage1 =>nrel_main_idtf:
+	[Лапша быстрого приготовления.Рецепт.Этап 1](* <- lang_ru;; *);;
+concept_instant_noodles_recept_stage2 =>nrel_main_idtf:
+	[Лапша быстрого приготовления.Рецепт.Этап 2](* <- lang_ru;; *);;
+
+concept_instant_noodles_recept <=nrel_context_of_action: [*
+	concept_instant_noodles <-dish;;
+	concept_instant_noodles=>nrel_ingredients:
+		concept_dried_vegetables;
+		concept_flavoring_additives;
+		concept_salt;
+                concept_flour;
+		concept_boiling_water;
+                concept_vegetable_oil;;
+*];;
+
+
+concept_instant_noodles_recept<-concept_recept;;
+
+concept_instant_noodles_recept <=nrel_cooking_time:...
+(*
+	<=nrel_value:...
+	(*
+		->rrel_minutes:5;;
+	*);;
+*);;
+concept_instant_noodles_recept ->rrel_1: concept_instant_noodles;;
+concept_instant_noodles_recept <=nrel_stage_decomposition: concept_instant_noodles_recept_stages;;
+
+concept_instant_noodles_recept_stage1 <-rrel_1: concept_instant_noodles_recept_stages;
+						<- stage;
+						<=nrel_stage_products:...
+						(*
+							->concept_dried_vegetables;;							
+							->concept_flavoring_additives;;
+							->concept_salt;;
+                					->concept_flour;;
+							->concept_water;;
+                					->concept_vegetable_oil;;
+						*);
+						=>nrel_processing_method: mixing;
+						=>nrel_final_product: instant_noodles_e1;
+						=>nrel_sequencing: concept_instant_noodles_recept_stage2;;
+
+concept_instant_noodles_recept_stage2 <- concept_instant_noodles_recept_stages;
+						<- stage;
+						<=nrel_equipment:...
+						(*
+							->teapot;;
+						*);
+						<=nrel_stage_products:...
+						(*
+							->instant_noodles_e1;;
+							->concept_boiling_water;;
+						*);
+						=>nrel_processing_method: pouring;
+						=>nrel_final_product: instant_noodles_e2;;
+						
+

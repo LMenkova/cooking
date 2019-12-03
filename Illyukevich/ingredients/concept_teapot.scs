@@ -1,0 +1,29 @@
+concept_teapot=>nrel_idtf:[teapot] (* <- lang_en;; *);;
+concept_teapot=>nrel_main_idtf:[чайник] (* <- lang_ru;; *);;
+
+concept_teapot<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(чайник)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Приспособление для кипячения воды](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_food;concept_pouring;concept_product;;
+	*);;
+
+*);;
+
+concept_teapot<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://photo//teapot.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;

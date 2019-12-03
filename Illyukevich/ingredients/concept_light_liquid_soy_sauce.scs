@@ -1,0 +1,28 @@
+concept_light_liquid_soy_sauce=>nrel_idtf:[light liquid soy_sauce] (* <- lang_en;; *);;
+concept_light_liquid_soy_sauce=>nrel_main_idtf:[светлый жидкий соевый соус] (* <- lang_ru;; *);;
+
+concept_light_liquid_soy_sauce<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(светлый жидкий соевый соус)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Светлый жидкий соевый соус обычно используют для разнообразия вкуса гарнира](* <- lang_ru;; *);;
+	*);;
+	
+	<=nrel_using_constants:...
+	(*
+		->concept_sauce;;
+	*);;
+
+*);;
+
+
+concept_light_liquid_soy_sauce<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://photo//twix.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;

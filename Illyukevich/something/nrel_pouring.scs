@@ -1,0 +1,49 @@
+nrel_pouring=>nrel_idtf:[pouring*] (* <- lang_en;; *);;
+nrel_pouring=>nrel_system_identifier:[nrel_pouring] (* <- lang_en;; *);;
+nrel_pouring=>nrel_main_idtf:[Заливка*] (* <- lang_ru;; *);;
+nrel_pouring<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(Заливка*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Заливка - процесс добавления воды или кипятка в продукты](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+	    ->concept_water;concept_boiling_water;concept_product;;
+	*);;
+*);;	
+nrel_pouring=>nrel_first_domain:concept_product;;
+nrel_pouring=>nrel_second_domain:concept_result;;
+concept_value<-...
+(*
+	->concept_food;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:nrel_pouring;;
+	*);;
+*);;
+nrel_pouring<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_pouring<-oriented_relation;;
+antisymmetric_relation->nrel_pouring;;
+antitransitive_relation->nrel_pouring;;
+antireflexive_relation->nrel_pouring;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+nrel_pouring<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_water;concept_dish;;
+	<-statement;;
+	=>nrel_idtf:[Утв.(вода, продукт)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Температура воды влияет на приготовление продуктов](* <- lang_ru;; *);;
+	*);;
+*);;

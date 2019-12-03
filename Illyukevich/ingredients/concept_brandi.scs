@@ -1,0 +1,18 @@
+concept_brandi=>nrel_idtf:[brandi] (* <- lang_en;; *);;
+concept_brandi=>nrel_main_idtf:[Брэнди] (* <- lang_ru;; *);;
+
+concept_brandi<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(Брэнди)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Бренди — крепкий алкогольный напиток, общий термин для обозначения продуктов дистилляции виноградного вина, фруктовой или ягодной браги с крепостью свыше 37.5 % об. Если явно не указано иное, то бренди изготавливается из виноградного вина.](* <- lang_ru;; *);;
+	*);;
+	
+	<=nrel_using_constants:...
+	(*
+		->concept_alcohol_drink;;
+
+	*);;
+
+*);;
+

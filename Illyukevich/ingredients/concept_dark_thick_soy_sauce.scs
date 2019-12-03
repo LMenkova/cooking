@@ -1,0 +1,29 @@
+concept_dark_thick_soy_sauce=>nrel_idtf:[dark_thick_soy_sauce] (* <- lang_en;; *);;
+concept_dark_thick_soy_sauce=>nrel_main_idtf:[темный густой соевый соус] (* <- lang_ru;; *);;
+
+concept_dark_thick_soy_sauce<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(темный густой соевый соус)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[темный густой соевый соус  обычно используют в качестве маринада мяса](* <- lang_ru;; *);;
+	*);;
+	
+	<=nrel_using_constants:...
+	(*
+		->concept_sauce;;
+		->concept_marinade;;
+	*);;
+
+*);;
+
+
+concept_dark_thick_soy_sauce<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://photo//twix.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;

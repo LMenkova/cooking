@@ -1,0 +1,28 @@
+concept_dried_vegetables=>nrel_idtf:[dried vegetables] (* <- lang_en;; *);;
+concept_dried_vegetables=>nrel_main_idtf:[сушеные овощи] (* <- lang_ru;; *);;
+
+concept_dried_vegetables<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(сушеные овощи)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Сушеные овощи – это продукты, которые подвергают термической обработке, удалив лишнюю влагу, чтобы обеспечить их хранение. ](* <- lang_ru;; *);;
+	*);;
+	
+	<=nrel_using_constants:...
+	(*
+		->concept_vegetables;;
+	*);;
+
+*);;
+
+
+concept_dried_vegetables<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://photo//vegetables.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;

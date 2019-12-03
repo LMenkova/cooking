@@ -1,0 +1,62 @@
+concept_tofu=>nrel_idtf:[tofu] (* <- lang_en;; *);;
+concept_tofu=>nrel_main_idtf:[тофу] (* <- lang_ru;; *);;
+
+concept_tofu<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(тофу )] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Сыр тофу – творог белого цвета, приготовленный из сои](* <- lang_ru;; *);;
+	*);;
+	
+	<=nrel_using_constants:...
+	(*
+		->concept_cheese;;
+	*);;
+
+*);;
+
+
+concept_tofu<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://photo//tofu.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_tofu<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_tofu;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, тофу )](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в тофу на 100 г продукта: 4.78  г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_tofu<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_tofu;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, тофу)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в тофу на 100 г продукта: 8.08 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_tofu<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_tofu;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, тофу)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в тофу на 100 г продукта: 1.88 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_tofu=>concept_soybeans;;

@@ -1,0 +1,62 @@
+concept_soybeans=>nrel_idtf:[soybeans] (* <- lang_en;; *);;
+concept_soybeans=>nrel_main_idtf:[соя] (* <- lang_ru;; *);;
+
+concept_soybeans<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(соя)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Соя -  однолетнее травянистое растение, вид рода Соя семейства Бобовые.](* <- lang_ru;; *);;
+	*);;
+	
+	<=nrel_using_constants:...
+	(*
+		->concept_beans;;
+	*);;
+
+*);;
+
+
+concept_soybeans<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://photo//soybeans.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_soybeans<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_soybeans;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, соя)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в сое на 100 г продукта: 6,8  г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_soybeans<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_soybeans;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, соя)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в сое на 100 г продукта: 13 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_soybeans<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_soybeans;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, соя)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в сое на 100 г продукта: 11,1 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_soybeans<=nrel_inclusion:concept_soy_sauce;concept_beans;;

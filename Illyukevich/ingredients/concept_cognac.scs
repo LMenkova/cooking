@@ -1,0 +1,31 @@
+concept_cognac=>nrel_idtf:[cognac] (* <- lang_en;; *);;
+concept_cognac=>nrel_main_idtf:[коньяк] (* <- lang_ru;; *);;
+
+concept_cognac<-rrel_key_sc_element:...
+	(*
+	<-definition;;=>nrel_main_idtf:[Опр.(коньяк)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Коньяк  — крепкий алкогольный напиток , производимый из определённых сортов винограда по особой технологии в регионе Шаранта, Франция.](* <- lang_ru;; *);;
+	*);;
+	
+	<=nrel_using_constants:...
+	(*
+		->concept_alcohol_drink;;
+
+	*);;
+
+*);;
+
+
+concept_cognac<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://photo//cognac.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_soybeans<=concept_brandi;;
